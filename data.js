@@ -6521,10 +6521,1315 @@ const verbalGrammarQuestions = [
     }
 ];
 
+
+const verbalVocabQuestions = [
+    {
+        "id": 1,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose the word closest in meaning to \u201cobfuscate\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Clarify"
+            },
+            {
+                "letter": "B",
+                "text": "Confuse"
+            },
+            {
+                "letter": "C",
+                "text": "Illuminate"
+            },
+            {
+                "letter": "D",
+                "text": "Simplify"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Confuse",
+        "solution": "Obfuscate means to make something unclear or confusing."
+    },
+    {
+        "id": 2,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose the word opposite in meaning to \u201cephemeral\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Fleeting"
+            },
+            {
+                "letter": "B",
+                "text": "Permanent"
+            },
+            {
+                "letter": "C",
+                "text": "Short-lived"
+            },
+            {
+                "letter": "D",
+                "text": "Temporary"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Permanent",
+        "solution": "Ephemeral = short-lived; opposite = permanent."
+    },
+    {
+        "id": 3,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose the correct synonym of \u201cperfidious\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Loyal"
+            },
+            {
+                "letter": "B",
+                "text": "Treacherous"
+            },
+            {
+                "letter": "C",
+                "text": "Honest"
+            },
+            {
+                "letter": "D",
+                "text": "Faithful"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Treacherous",
+        "solution": "Perfidious = deceitful or untrustworthy."
+    },
+    {
+        "id": 4,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose the word closest in meaning to \u201clachrymose\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Tearful"
+            },
+            {
+                "letter": "B",
+                "text": "Joyful"
+            },
+            {
+                "letter": "C",
+                "text": "Indifferent"
+            },
+            {
+                "letter": "D",
+                "text": "Humorous"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Tearful",
+        "solution": "Lachrymose = inclined to shed tears; tearful."
+    },
+    {
+        "id": 5,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Identify the meaning of \u201cpugnacious\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Peaceful"
+            },
+            {
+                "letter": "B",
+                "text": "Combative"
+            },
+            {
+                "letter": "C",
+                "text": "Friendly"
+            },
+            {
+                "letter": "D",
+                "text": "Humble"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Combative",
+        "solution": "Pugnacious = eager to fight or quarrel."
+    },
+    {
+        "id": 6,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose the word opposite in meaning to \u201cgregarious\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Sociable"
+            },
+            {
+                "letter": "B",
+                "text": "Shy"
+            },
+            {
+                "letter": "C",
+                "text": "Outgoing"
+            },
+            {
+                "letter": "D",
+                "text": "Friendly"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Shy",
+        "solution": "Gregarious = sociable; opposite = shy/unsociable."
+    },
+    {
+        "id": 7,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Synonym of \u201cabstruse\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Obvious"
+            },
+            {
+                "letter": "B",
+                "text": "Difficult"
+            },
+            {
+                "letter": "C",
+                "text": "Simple"
+            },
+            {
+                "letter": "D",
+                "text": "Clear"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Difficult",
+        "solution": "Abstruse = hard to understand; obscure."
+    },
+    {
+        "id": 8,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose the closest in meaning: \u201cmunificent\u201d",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Stingy"
+            },
+            {
+                "letter": "B",
+                "text": "Generous"
+            },
+            {
+                "letter": "C",
+                "text": "Unkind"
+            },
+            {
+                "letter": "D",
+                "text": "Miserly"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Generous",
+        "solution": "Munificent = very generous."
+    },
+    {
+        "id": 9,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose the word that best completes the sentence:\n\u201cHe approached the problem with great ___.\u201d",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Alacrity"
+            },
+            {
+                "letter": "B",
+                "text": "Apathy"
+            },
+            {
+                "letter": "C",
+                "text": "Lethargy"
+            },
+            {
+                "letter": "D",
+                "text": "Indifference"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Alacrity",
+        "solution": "Alacrity = brisk and cheerful readiness."
+    },
+    {
+        "id": 10,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Synonym of \u201cinscrutable\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Transparent"
+            },
+            {
+                "letter": "B",
+                "text": "Mysterious"
+            },
+            {
+                "letter": "C",
+                "text": "Clear"
+            },
+            {
+                "letter": "D",
+                "text": "Obvious"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Mysterious",
+        "solution": "Inscrutable = impossible to understand or interpret."
+    },
+    {
+        "id": 11,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Opposite of \u201cinchoate\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Fully developed"
+            },
+            {
+                "letter": "B",
+                "text": "Initial"
+            },
+            {
+                "letter": "C",
+                "text": "Incomplete"
+            },
+            {
+                "letter": "D",
+                "text": "Rudimentary"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Fully developed",
+        "solution": "Inchoate = just begun; not fully formed; opposite = fully developed."
+    },
+    {
+        "id": 12,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Meaning of \u201ctaciturn\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Talkative"
+            },
+            {
+                "letter": "B",
+                "text": "Silent"
+            },
+            {
+                "letter": "C",
+                "text": "Cheerful"
+            },
+            {
+                "letter": "D",
+                "text": "Loud"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Silent",
+        "solution": "Taciturn = habitually quiet, reserved."
+    },
+    {
+        "id": 13,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Synonym of \u201ccallous\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Kind"
+            },
+            {
+                "letter": "B",
+                "text": "Heartless"
+            },
+            {
+                "letter": "C",
+                "text": "Compassionate"
+            },
+            {
+                "letter": "D",
+                "text": "Friendly"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Heartless",
+        "solution": "Callous = showing cruel disregard for others."
+    },
+    {
+        "id": 14,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Meaning of \u201ciconoclast\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Rule-follower"
+            },
+            {
+                "letter": "B",
+                "text": "Rebel against tradition"
+            },
+            {
+                "letter": "C",
+                "text": "Loyalist"
+            },
+            {
+                "letter": "D",
+                "text": "Conservative"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Rebel against tradition",
+        "solution": "Iconoclast = one who attacks or ignores traditional beliefs."
+    },
+    {
+        "id": 15,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Word closest in meaning to \u201csagacious\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Foolish"
+            },
+            {
+                "letter": "B",
+                "text": "Wise"
+            },
+            {
+                "letter": "C",
+                "text": "Careless"
+            },
+            {
+                "letter": "D",
+                "text": "Silly"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Wise",
+        "solution": "Sagacious = having keen judgment; wise."
+    },
+    {
+        "id": 16,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Opposite of \u201cvociferous\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Quiet"
+            },
+            {
+                "letter": "B",
+                "text": "Loud"
+            },
+            {
+                "letter": "C",
+                "text": "Boisterous"
+            },
+            {
+                "letter": "D",
+                "text": "Noisy"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Quiet",
+        "solution": "Vociferous = loud and vehement; opposite = quiet."
+    },
+    {
+        "id": 17,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose synonym of \u201cenervate\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Energize"
+            },
+            {
+                "letter": "B",
+                "text": "Weaken"
+            },
+            {
+                "letter": "C",
+                "text": "Strengthen"
+            },
+            {
+                "letter": "D",
+                "text": "Revive"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Weaken",
+        "solution": "Enervate = to drain of energy or weaken."
+    },
+    {
+        "id": 18,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Closest meaning: \u201crecalcitrant\u201d",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Obedient"
+            },
+            {
+                "letter": "B",
+                "text": "Stubborn"
+            },
+            {
+                "letter": "C",
+                "text": "Compliant"
+            },
+            {
+                "letter": "D",
+                "text": "Docile"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Stubborn",
+        "solution": "Recalcitrant = stubbornly resisting authority."
+    },
+    {
+        "id": 19,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Meaning of \u201cinsidious\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Harmful in a subtle way"
+            },
+            {
+                "letter": "B",
+                "text": "Openly dangerous"
+            },
+            {
+                "letter": "C",
+                "text": "Harmless"
+            },
+            {
+                "letter": "D",
+                "text": "Transparent"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Harmful in a subtle way",
+        "solution": "Insidious = gradual, subtle, and harmful."
+    },
+    {
+        "id": 20,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Choose synonym of \u201caccolade\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Award"
+            },
+            {
+                "letter": "B",
+                "text": "Punishment"
+            },
+            {
+                "letter": "C",
+                "text": "Criticism"
+            },
+            {
+                "letter": "D",
+                "text": "Rebuke"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Award",
+        "solution": "Accolade = praise or award for achievement."
+    },
+    {
+        "id": 21,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Closest meaning: \u201cesoteric\u201d",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Common knowledge"
+            },
+            {
+                "letter": "B",
+                "text": "Understood by few"
+            },
+            {
+                "letter": "C",
+                "text": "Universal"
+            },
+            {
+                "letter": "D",
+                "text": "Obvious"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Understood by few",
+        "solution": "Esoteric = intended for or understood by a small group."
+    },
+    {
+        "id": 22,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Opposite of \u201csuperfluous\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Necessary"
+            },
+            {
+                "letter": "B",
+                "text": "Excessive"
+            },
+            {
+                "letter": "C",
+                "text": "Redundant"
+            },
+            {
+                "letter": "D",
+                "text": "Extra"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Necessary",
+        "solution": "Superfluous = unnecessary; opposite = necessary."
+    },
+    {
+        "id": 23,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Meaning of \u201cpulchritude\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Ugliness"
+            },
+            {
+                "letter": "B",
+                "text": "Beauty"
+            },
+            {
+                "letter": "C",
+                "text": "Strength"
+            },
+            {
+                "letter": "D",
+                "text": "Intelligence"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Beauty",
+        "solution": "Pulchritude = physical beauty."
+    },
+    {
+        "id": 24,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Word closest in meaning to \u201cantediluvian\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Modern"
+            },
+            {
+                "letter": "B",
+                "text": "Extremely old-fashioned"
+            },
+            {
+                "letter": "C",
+                "text": "Innovative"
+            },
+            {
+                "letter": "D",
+                "text": "Contemporary"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Extremely old-fashioned",
+        "solution": "Antediluvian = very old, outdated."
+    },
+    {
+        "id": 25,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Synonym of \u201ctemerity\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Audacity"
+            },
+            {
+                "letter": "B",
+                "text": "Caution"
+            },
+            {
+                "letter": "C",
+                "text": "Prudence"
+            },
+            {
+                "letter": "D",
+                "text": "Hesitation"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Audacity",
+        "solution": "Temerity = reckless boldness; audacity."
+    },
+    {
+        "id": 26,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Meaning of \u201cobstreperous\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Noisy and unruly"
+            },
+            {
+                "letter": "B",
+                "text": "Calm"
+            },
+            {
+                "letter": "C",
+                "text": "Quiet"
+            },
+            {
+                "letter": "D",
+                "text": "Gentle"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Noisy and unruly",
+        "solution": "Obstreperous = noisy, difficult to control."
+    },
+    {
+        "id": 27,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Opposite of \u201cmercurial\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Stable"
+            },
+            {
+                "letter": "B",
+                "text": "Fickle"
+            },
+            {
+                "letter": "C",
+                "text": "Erratic"
+            },
+            {
+                "letter": "D",
+                "text": "Capricious"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Stable",
+        "solution": "Mercurial = changeable; opposite = stable."
+    },
+    {
+        "id": 28,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Closest in meaning to \u201cnefarious\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Wicked"
+            },
+            {
+                "letter": "B",
+                "text": "Good"
+            },
+            {
+                "letter": "C",
+                "text": "Honorable"
+            },
+            {
+                "letter": "D",
+                "text": "Noble"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Wicked",
+        "solution": "Nefarious = extremely wicked or villainous."
+    },
+    {
+        "id": 29,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Synonym of \u201cabnegation\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Self-denial"
+            },
+            {
+                "letter": "B",
+                "text": "Indulgence"
+            },
+            {
+                "letter": "C",
+                "text": "Greed"
+            },
+            {
+                "letter": "D",
+                "text": "Selfishness"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Self-denial",
+        "solution": "Abnegation = renouncing personal desires; self-denial."
+    },
+    {
+        "id": 30,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Meaning of \u201cintransigent\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Flexible"
+            },
+            {
+                "letter": "B",
+                "text": "Stubborn"
+            },
+            {
+                "letter": "C",
+                "text": "Yielding"
+            },
+            {
+                "letter": "D",
+                "text": "Compliant"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Stubborn",
+        "solution": "Intransigent = unwilling to change opinions or compromise."
+    },
+    {
+        "id": 31,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Word closest in meaning to \u201cperfunctory\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Careless"
+            },
+            {
+                "letter": "B",
+                "text": "Thorough"
+            },
+            {
+                "letter": "C",
+                "text": "Meticulous"
+            },
+            {
+                "letter": "D",
+                "text": "Diligent"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Careless",
+        "solution": "Perfunctory = done mechanically, without care."
+    },
+    {
+        "id": 32,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Synonym of \u201cmendacious\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Truthful"
+            },
+            {
+                "letter": "B",
+                "text": "Lying"
+            },
+            {
+                "letter": "C",
+                "text": "Honest"
+            },
+            {
+                "letter": "D",
+                "text": "Accurate"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Lying",
+        "solution": "Mendacious = not telling the truth."
+    },
+    {
+        "id": 33,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Opposite of \u201clugubrious\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Cheerful"
+            },
+            {
+                "letter": "B",
+                "text": "Sorrowful"
+            },
+            {
+                "letter": "C",
+                "text": "Sad"
+            },
+            {
+                "letter": "D",
+                "text": "Mournful"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Cheerful",
+        "solution": "Lugubrious = mournful, gloomy; opposite = cheerful."
+    },
+    {
+        "id": 34,
+        "topic": "ENGLISH VOCABULARY",
+        "question": "Meaning of \u201cabrogate\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Revoke"
+            },
+            {
+                "letter": "B",
+                "text": "Establish"
+            },
+            {
+                "letter": "C",
+                "text": "Create"
+            },
+            {
+                "letter": "D",
+                "text": "Initiate"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Revoke",
+        "solution": "Abrogate = to abolish or cancel formally."
+    },
+    {
+        "id": 35,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Closest in meaning: \u201cpellucid\u201d",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Opaque"
+            },
+            {
+                "letter": "B",
+                "text": "Transparent"
+            },
+            {
+                "letter": "C",
+                "text": "Cloudy"
+            },
+            {
+                "letter": "D",
+                "text": "Murky\nPART II \u2013 FILIPINO VOCABULARY (36\u201350)"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Transparent",
+        "solution": "Pellucid = clear, transparent.\n\nPART II \u2013 FILIPINO VOCABULARY (36\u201350)"
+    },
+    {
+        "id": 36,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmapanghamon\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Mahiyain"
+            },
+            {
+                "letter": "B",
+                "text": "Pumupukaw ng hamon"
+            },
+            {
+                "letter": "C",
+                "text": "Masunurin"
+            },
+            {
+                "letter": "D",
+                "text": "Mahina"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Pumupukaw ng hamon",
+        "solution": "Mapanghamon = challenging, provocative."
+    },
+    {
+        "id": 37,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmatatag\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Malambot"
+            },
+            {
+                "letter": "B",
+                "text": "Matibay"
+            },
+            {
+                "letter": "C",
+                "text": "Marupok"
+            },
+            {
+                "letter": "D",
+                "text": "Mahina"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Matibay",
+        "solution": "Matatag = firm, resilient, strong."
+    },
+    {
+        "id": 38,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cpalasak\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Karaniwan"
+            },
+            {
+                "letter": "B",
+                "text": "Bihira"
+            },
+            {
+                "letter": "C",
+                "text": "Natatangi"
+            },
+            {
+                "letter": "D",
+                "text": "Iba"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Karaniwan",
+        "solution": "Palasak = common, prevalent."
+    },
+    {
+        "id": 39,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmapanuri\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Nagmamasid at tumatasa"
+            },
+            {
+                "letter": "B",
+                "text": "Walang pakialam"
+            },
+            {
+                "letter": "C",
+                "text": "Tamad"
+            },
+            {
+                "letter": "D",
+                "text": "Walang pinag-aralan"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Nagmamasid at tumatasa",
+        "solution": "Mapanuri = analytical, observant, critical."
+    },
+    {
+        "id": 40,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmaawain\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Mapagkawanggawa"
+            },
+            {
+                "letter": "B",
+                "text": "Walang pakialam"
+            },
+            {
+                "letter": "C",
+                "text": "Malupit"
+            },
+            {
+                "letter": "D",
+                "text": "Salbahe"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Mapagkawanggawa",
+        "solution": "Maawain = compassionate, merciful."
+    },
+    {
+        "id": 41,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmapagsamantalang tao\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Mapagbigay"
+            },
+            {
+                "letter": "B",
+                "text": "Makasarili"
+            },
+            {
+                "letter": "C",
+                "text": "Mapagkakatiwalaan"
+            },
+            {
+                "letter": "D",
+                "text": "Maalalahanin"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Makasarili",
+        "solution": "Mapagsamantalang tao = exploitative, selfish person."
+    },
+    {
+        "id": 42,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cpalasintahan\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Matapat"
+            },
+            {
+                "letter": "B",
+                "text": "Marupok ang loob"
+            },
+            {
+                "letter": "C",
+                "text": "Maalalahanin"
+            },
+            {
+                "letter": "D",
+                "text": "Mapagkakatiwalaan"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Marupok ang loob",
+        "solution": "Palasintahan = easily influenced emotionally; weak-willed."
+    },
+    {
+        "id": 43,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmalikhain\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Laging sumusunod"
+            },
+            {
+                "letter": "B",
+                "text": "Mapag-isip at may imahinasyon"
+            },
+            {
+                "letter": "C",
+                "text": "Tamad"
+            },
+            {
+                "letter": "D",
+                "text": "Walang talino"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Mapag-isip at may imahinasyon",
+        "solution": "Malikhain = creative, imaginative."
+    },
+    {
+        "id": 44,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmatimpi\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Mahinahon at may kontrol"
+            },
+            {
+                "letter": "B",
+                "text": "Magaspang"
+            },
+            {
+                "letter": "C",
+                "text": "Madali mapikon"
+            },
+            {
+                "letter": "D",
+                "text": "Walang disiplina"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Mahinahon at may kontrol",
+        "solution": "Matimpi = self-controlled, composed."
+    },
+    {
+        "id": 45,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmaalalahanin\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Palaging nag-iisip ng kabutihan ng iba"
+            },
+            {
+                "letter": "B",
+                "text": "Walang pakialam"
+            },
+            {
+                "letter": "C",
+                "text": "Mapanuri"
+            },
+            {
+                "letter": "D",
+                "text": "Mapagmataas"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Palaging nag-iisip ng kabutihan ng iba",
+        "solution": "Maalalahanin = considerate, thoughtful."
+    },
+    {
+        "id": 46,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmahiyain\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Palaban"
+            },
+            {
+                "letter": "B",
+                "text": "Tahimik at mahina ang loob"
+            },
+            {
+                "letter": "C",
+                "text": "Masigla"
+            },
+            {
+                "letter": "D",
+                "text": "Mapangahas"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Tahimik at mahina ang loob",
+        "solution": "Mahiyain = shy, timid."
+    },
+    {
+        "id": 47,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmapanlikha\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Mapag-imbento at malikhaing tao"
+            },
+            {
+                "letter": "B",
+                "text": "Sunud-sunuran"
+            },
+            {
+                "letter": "C",
+                "text": "Tamad"
+            },
+            {
+                "letter": "D",
+                "text": "Walang kakayahan"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Mapag-imbento at malikhaing tao",
+        "solution": "Mapanlikha = inventive, creative."
+    },
+    {
+        "id": 48,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmapanghikayat\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Nakakaimpluwensya sa iba"
+            },
+            {
+                "letter": "B",
+                "text": "Walang epekto"
+            },
+            {
+                "letter": "C",
+                "text": "Malupit"
+            },
+            {
+                "letter": "D",
+                "text": "Mapang-abuso"
+            }
+        ],
+        "answer_letter": "A",
+        "answer_text": "Nakakaimpluwensya sa iba",
+        "solution": "Mapanghikayat = persuasive, influential."
+    },
+    {
+        "id": 49,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cpalasintahan\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Malupit"
+            },
+            {
+                "letter": "B",
+                "text": "Madaling mabigo sa tiwala"
+            },
+            {
+                "letter": "C",
+                "text": "Matatag at tapat"
+            },
+            {
+                "letter": "D",
+                "text": "Mapagmataas"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Madaling mabigo sa tiwala",
+        "solution": "Palasintahan (repeated) = emotionally fragile, easily swayed."
+    },
+    {
+        "id": 50,
+        "topic": "FILIPINO VOCABULARY",
+        "question": "Kahulugan ng \u201cmapagsapalaran\u201d:",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Palaging nag-iingat"
+            },
+            {
+                "letter": "B",
+                "text": "Mahilig sa panganib o hamon"
+            },
+            {
+                "letter": "C",
+                "text": "Takot sa lahat"
+            },
+            {
+                "letter": "D",
+                "text": "Walang tiwala sa sarili"
+            }
+        ],
+        "answer_letter": "B",
+        "answer_text": "Mahilig sa panganib o hamon",
+        "solution": "Mapagsapalaran = adventurous, risk-taker."
+    }
+];
+
 const questionsData = {
     "numerical": numericalQuestions,
     "analytical_word": analyticalQuestions,
     "analytical_logical": logicalQuestions,
     "analytical_data": dataInterpQuestions,
-    "verbal_grammar": verbalGrammarQuestions
+    "verbal_grammar": verbalGrammarQuestions,
+    "verbal_vocab": verbalVocabQuestions
 };
