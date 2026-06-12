@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 'verbal_reading', title: 'Reading Comprehension', description: 'Understanding and analyzing written passages' }
         ],
         'general': [
-            { id: 'general_constitution', title: 'Philippine Constitution', description: 'Basic principles and state policies' },
-            { id: 'general_conduct', title: 'Code of Conduct (R.A 6713)', description: 'Ethical standards for public officials and employees' },
-            { id: 'general_peace', title: 'Peace and Human Rights', description: 'Peace issues and human rights concepts' },
-            { id: 'general_environment', title: 'Environment Management', description: 'Environmental protection and management' }
+            { id: 'geninfo_const', title: 'Philippine Constitution', description: 'Basic principles and state policies' },
+            { id: 'geninfo_conduct', title: 'Code of Conduct (R.A 6713)', description: 'Ethical standards for public officials and employees' },
+            { id: 'geninfo_peace', title: 'Peace and Human Rights', description: 'Peace issues and human rights concepts' },
+            { id: 'geninfo_environment', title: 'Environment Management', description: 'Environmental protection and management' }
         ]
     };
 
@@ -207,8 +207,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function parseMarkdownTable(text) {
             // Very simple parser for our specific markdown tables
-            if (!text.includes('|')) return text;
-            
+            if (!text.includes('|')) {
+                return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+            }
             const lines = text.split('\n');
             let inTable = false;
             let html = '';
