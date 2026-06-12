@@ -321,6 +321,41 @@ header {
     color: var(--text-main);
 }
 
+.question-text table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1.1rem;
+}
+
+.question-text th,
+.question-text td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.question-text th {
+    background: rgba(129, 140, 248, 0.15);
+    color: #a5b4fc;
+    font-weight: 600;
+}
+
+.question-text td {
+    color: var(--text-main);
+}
+
+.question-text tr:last-child td {
+    border-bottom: none;
+}
+
+.question-text tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
 .options-grid {
     display: grid;
     grid-template-columns: 1fr;
