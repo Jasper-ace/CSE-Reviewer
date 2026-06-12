@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Reviewer - Choose Your Subject</title>
+    <meta name="description" content="Civil Service Examination (CSE) Reviewer - Enhance your Numerical, Analytical, Verbal abilities and General Information knowledge.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <main class="container">
+        <header>
+            <h1 class="title">CSE Reviewer</h1>
+            <p class="subtitle">Select a subject to begin your preparation</p>
+        </header>
+
+        <section class="categories" id="category-container">
+            <button class="category-card" data-subject="numerical">
+                <div class="icon-wrapper">
+                    <!-- Calculator/Math Icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="14.01"></line><line x1="12" y1="14" x2="12" y2="14.01"></line><line x1="8" y1="14" x2="8" y2="14.01"></line><line x1="16" y1="18" x2="16" y2="18.01"></line><line x1="12" y1="18" x2="12" y2="18.01"></line><line x1="8" y1="18" x2="8" y2="18.01"></line><line x1="16" y1="10" x2="16" y2="10.01"></line><line x1="12" y1="10" x2="12" y2="10.01"></line><line x1="8" y1="10" x2="8" y2="10.01"></line></svg>
+                </div>
+                <h2>Numerical Ability</h2>
+                <p>Mathematics, word problems, sequences, and data interpretation</p>
+            </button>
+
+            <button class="category-card" data-subject="analytical">
+                <div class="icon-wrapper">
+                    <!-- Brain/Logic Icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path><path d="M16 12h-4"></path></svg>
+                </div>
+                <h2>Analytical Ability</h2>
+                <p>Logic, problem solving, assumptions, and analytical reasoning</p>
+            </button>
+
+            <button class="category-card" data-subject="verbal">
+                <div class="icon-wrapper">
+                    <!-- Book/Text Icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </div>
+                <h2>Verbal Ability</h2>
+                <p>Vocabulary, grammar, analogies, and reading comprehension</p>
+            </button>
+
+            <button class="category-card" data-subject="general">
+                <div class="icon-wrapper">
+                    <!-- Globe/Info Icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </div>
+                <h2>General Information</h2>
+                <p>Philippine constitution, current events, and environmental issues</p>
+            </button>
+        </section>
+
+        <!-- Question section, hidden initially -->
+        <section class="question-section hidden" id="question-section">
+            <button class="back-btn" id="back-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Subjects
+            </button>
+            <div class="content-header">
+                <h2 id="selected-subject-title">Subject Title</h2>
+                <span class="badge" id="question-counter">0 Questions Ready</span>
+            </div>
+            
+            <div class="glass-panel" id="questions-container">
+                <div class="loading-state">
+                    <div class="spinner"></div>
+                    <p class="placeholder-text">Waiting for questions to be loaded...</p>
+                    <p class="sub-text">The user will provide questions later.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

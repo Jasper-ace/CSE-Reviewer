@@ -1,0 +1,640 @@
+NUMERICAL ABILITY
+PART I – Advanced Algebra
+
+1. If 2x + 3y = 13 and 4x − y = 5, find x.
+A. 1
+B. 2
+C. 3
+D. 4
+
+2. Solve: x² − 7x + 10 = 0
+A. 2 & 5
+B. 3 & 4
+C. 1 & 10
+D. 5 & 7
+
+3. If x + 1/x = 6, find x² + 1/x².
+A. 34
+B. 35
+C. 36
+D. 38
+
+4. Solve: 3/x + 2 = 5
+A. 1
+B. 2
+C. 3
+D. 4
+
+5. If 5ˣ = 125, find x.
+A. 2
+B. 3
+C. 4
+D. 5
+
+PART II – Work, Time & Rates
+
+6. A can finish a job in 12 days, B in 18 days. Together?
+A. 6
+B. 7.2
+
+7. If 15 workers finish in 8 days, how many workers are needed for 5 days?
+A. 20
+B. 22
+C. 24
+D. 25
+
+8. Pipe A fills tank in 4 hrs, B in 6 hrs. Together?
+A. 2.4
+B. 2.5
+C. 3
+D. 3.5
+
+9. A train 150m long passes a man in 10 sec. Speed?
+A. 12 m/s
+B. 15 m/s
+C. 18 m/s
+D. 20 m/s
+
+10. A car travels 80 kph and returns 60 kph. Average speed?
+A. 68
+B. 69
+C. 70
+D. 72
+
+PART III – Ratio & Mixture
+
+11. Ratio 3:4, sum 140. Larger number?
+A. 70
+B. 75
+C. 80
+D. 85
+
+12. 30L solution 40% alcohol. Alcohol amount?
+A. 10L
+B. 12L
+C. 14L
+D. 16L
+
+13. A father is 5 times son's age. Sum 72. Father's age?
+A. 50
+B. 55
+C. 60
+D. 65
+
+14. Divide 1,200 in ratio 2:3:5. Largest share?
+A. 480
+B. 500
+C. 600
+D. 720
+
+15. 25% of number equals 3/4 of 80. Find number.
+A. 200
+B. 220
+C. 240
+D. 260
+
+PART IV – Percent, Profit, Interest
+
+16. Selling price 2,400 with 20% loss. Cost price?
+A. 2,800
+B. 2,900
+C. 3,000
+D. 3,200
+
+17. Compound interest of 5,000 at 10% for 2 yrs?
+A. 1,000
+B. 1,050
+C. 1,100
+D. 1,200
+
+18. Price increases from 500 to 650. % increase?
+A. 25%
+B. 28%
+C. 30%
+D. 32%
+
+19. Commission 7% of 85,000?
+A. 5,850
+B. 5,900
+C. 5,950
+D. 6,000
+
+20. If price decreases 15% to 1,700, original price?
+A. 1,900
+B. 2,000
+C. 2,100
+D. 2,200
+
+PART V – Geometry
+
+21. Area of circle (r = 14, π = 22/7)
+A. 616
+B. 620
+C. 630
+D. 640
+
+22. Perimeter rectangle (L = 18, W = 12)
+A. 56
+B. 60
+C. 64
+D. 68
+
+23. Volume cube (side = 8)
+A. 512
+B. 520
+C. 530
+D. 540
+
+24. Area triangle (b = 20, h = 15)
+A. 120
+B. 140
+C. 150
+D. 160
+
+25. Diagonal square (side = 10)
+A. 10√2
+B. 12√2
+C. 14
+D. 20
+
+PART VI – Number Series
+
+26. 2, 6, 14, 30, ?
+A. 46
+B. 52
+C. 62
+D. 70
+
+27. 5, 15, 45, 135, ?
+A. 270
+B. 375
+C. 405
+D. 420
+
+28. 1, 4, 10, 22, 46, ?
+A. 70
+B. 82
+C. 94
+D. 98
+
+29. 7, 10, 16, 28, 52, ?
+A. 80
+B. 88
+C. 100
+D. 112
+
+30. 3, 8, 15, 24, 35, ?
+A. 46
+B. 48
+C. 50
+D. 52
+
+PART VII – Advanced Problems
+
+31. If x − 1/x = 4, find x² + 1/x²
+A. 14
+B. 16
+C. 18
+D. 20
+
+32. Solve: 2x + 5 = 3x − 7
+A. 10
+B. 11
+C. 12
+D. 13
+
+33. LCM of 36 and 48
+A. 96
+B. 120
+C. 144
+D. 168
+
+34. GCF of 180 and 252
+A. 24
+B. 30
+C. 36
+D. 42
+
+35. If 2ˣ = 64, x = ?
+A. 4
+B. 5
+C. 6
+D. 7
+
+PART VIII – Challenging Word Problems
+
+36. Average of 8 numbers is 30. Remove 40. New average?
+A. 28
+B. 29
+C. 30
+D. 31
+
+37. Two numbers sum 100, difference 20. Larger number?
+A. 50
+B. 55
+C. 60
+D. 65
+
+38. A number divided by 9 gives 12 remainder 5. Number?
+A. 110
+B. 112
+C. 113
+D. 115
+
+39. If 4 men do work in 9 days, how long 6 men?
+A. 5
+B. 6
+C. 7
+D. 8
+
+40. Simple interest on 8,000 at 5% for 4 yrs?
+A. 1,400
+B. 1,500
+C. 1,600
+D. 1,700
+
+PART IX – Logical Numerical
+
+41. 9, 27, 81, ?
+A. 162
+B. 243
+C. 324
+D. 405
+
+42. 4, 11, 25, 53, ?
+A. 95
+B. 101
+C. 109
+D. 117
+
+43. 1, 1, 2, 3, 5, ?
+A. 6
+B. 7
+C. 8
+D. 9
+
+44. If 3x = 12y and y = 5, find x
+A. 15
+B. 18
+C. 20
+D. 25
+
+45. 60% of number is 90. Number?
+A. 120
+B. 135
+C. 150
+D. 180
+
+PART X – Ultimate Level
+
+46. If x² + 5x + 6 = 0, find x
+A. -2, -3
+B. 2, 3
+C. -1, -6
+D. 1, 6
+
+47. Selling price 3,600 with 25% profit. Cost price?
+A. 2,700
+B. 2,800
+C. 2,880
+D. 3,000
+
+48. A train 200m long crosses 300m bridge in 25 sec. Speed?
+A. 16 m/s
+B. 18 m/s
+C. 20 m/s
+D. 22 m/s
+
+49. 35% of number equals 140. Number?
+A. 300
+B. 350
+C. 400
+D. 450
+
+50. If x + 2 = 7, find x³
+A. 100
+B. 110
+C. 125
+D. 150
+
+Numerical Ability – Answers with Solutions
+1. B (2)
+Given:
+2x + 3y = 13
+4x − y = 5
+From second equation:
+y = 4x − 5
+Substitute:
+2x + 3(4x − 5) = 13
+2x + 12x − 15 = 13
+14x = 28
+x = 2
+
+2. A (2 & 5)
+x² − 7x + 10 = 0
+Factor:
+(x − 5)(x − 2) = 0
+x = 5 or x = 2
+
+3. A (34)
+Given:
+x + 1/x = 6
+Square both sides:
+36 = x² + 2 + 1/x²
+x² + 1/x² = 36 − 2
+= 34
+
+4. A (1)
+3/x + 2 = 5
+3/x = 3
+x = 1
+
+5. B (3)
+5ˣ = 125
+125 = 5³
+x = 3
+
+6. B (7.2 days)
+A's rate = 1/12
+B's rate = 1/18
+Together:
+1/12 + 1/18 = 5/36
+Time = 36/5
+= 7.2 days
+
+7. C (24 workers)
+Work = workers × days
+15 × 8 = 120 man-days
+120 ÷ 5
+= 24 workers
+
+8. A (2.4 hours)
+Rate:
+1/4 + 1/6 = 5/12
+Time = 12/5
+= 2.4 hours
+
+9. B (15 m/s)
+Speed = Distance ÷ Time
+150 ÷ 10
+= 15 m/s
+
+10. B (69 kph)
+Average speed:
+(2ab)/(a+b)
+= (2×80×60)/(80+60)
+= 9600/140
+= 68.57
+≈ 69 kph
+
+11. C (80)
+Ratio = 3:4
+Total parts = 7
+140 ÷ 7 = 20
+Larger = 4 × 20
+= 80
+
+12. B (12 L)
+40% of 30
+= 0.40 × 30
+= 12 L
+
+13. C (60)
+Father = 5x
+Son = x
+5x + x = 72
+6x = 72
+x = 12
+Father = 5(12)
+= 60
+
+14. C (600)
+Ratio = 2:3:5
+Total parts = 10
+1200 ÷ 10 = 120
+Largest share = 5 × 120
+= 600
+
+15. C (240)
+25% of x = ¾ of 80
+0.25x = 60
+x = 60 ÷ 0.25
+= 240
+
+16. C (3000)
+20% loss means SP = 80% of CP
+2400 = 0.8(CP)
+CP = 2400 ÷ 0.8
+= 3000
+
+17. B (1050)
+Compound Amount:
+5000(1.10)²
+= 5000(1.21)
+= 6050
+Interest:
+6050 − 5000
+= 1050
+
+18. C (30%)
+Increase:
+650 − 500 = 150
+150/500 × 100
+= 30%
+
+19. C (5950)
+7% of 85,000
+= 0.07 × 85,000
+= 5,950
+
+20. B (2000)
+1700 = 85% of original
+Original = 1700 ÷ 0.85
+= 2000
+
+21. A (616)
+Area of circle:
+= (22/7)(14²)
+= (22/7)(196)
+= 22(28)
+= 616
+
+22. B (60)
+Perimeter:
+2(L + W)
+= 2(18 + 12)
+= 2(30)
+= 60
+
+23. A (512)
+Volume of cube:
+8³
+= 512
+
+24. C (150)
+Area of triangle:
+½bh
+= ½(20)(15)
+= 150
+
+25. A (10√2)
+Diagonal of square:
+side√2
+= 10√2
+
+26. C (62)
+Pattern:
+×2 + 2
+2 → 6 → 14 → 30
+30×2 + 2
+= 62
+
+27. C (405)
+Multiply by 3
+5 → 15 → 45 → 135
+135 × 3
+= 405
+
+28. C (94)
+Pattern:
+×2 + 2
+46 × 2 + 2
+= 94
+
+29. C (100)
+Differences:
+3, 6, 12, 24
+Next difference = 48
+52 + 48
+= 100
+
+30. B (48)
+Differences:
+5, 7, 9, 11
+Next difference = 13
+35 + 13
+= 48
+
+31. C (18)
+Given:
+x − 1/x = 4
+Square both sides:
+16 = x² + 1/x² − 2
+x² + 1/x² = 18
+
+32. C (12)
+2x + 5 = 3x − 7
+5 + 7 = x
+x = 12
+
+33. C (144)
+36 = 2² × 3²
+48 = 2⁴ × 3
+LCM = 2⁴ × 3²
+= 144
+
+34. C (36)
+180 = 2² × 3² × 5
+252 = 2² × 3² × 7
+GCF = 2² × 3²
+= 36
+
+35. C (6)
+2ˣ = 64
+64 = 2⁶
+x = 6
+
+36. B (29)
+Total = 8 × 30
+= 240
+Remove 40:
+240 − 40 = 200
+New average:
+200 ÷ 7
+= 28.57
+≈ 29
+
+37. C (60)
+x + y = 100
+x − y = 20
+Add equations:
+2x = 120
+x = 60
+
+38. C (113)
+Number = (9 × 12) + 5
+= 113
+
+39. B (6 days)
+Work = 4 × 9
+= 36 man-days
+36 ÷ 6
+= 6 days
+
+40. C (1600)
+Simple Interest:
+I = PRT
+= 8000 × 0.05 × 4
+= 1600
+
+41. B (243)
+Multiply by 3
+9 → 27 → 81
+81 × 3
+= 243
+
+42. C (109)
+Differences:
+7, 14, 28, 56
+Next = 112
+53 + 56 = 109
+
+43. C (8)
+Fibonacci sequence:
+1, 1, 2, 3, 5
+Next = 3 + 5
+= 8
+
+44. C (20)
+3x = 12y
+y = 5
+3x = 60
+x = 20
+
+45. C (150)
+60% of x = 90
+0.60x = 90
+x = 90 ÷ 0.60
+= 150
+
+46. A (-2, -3)
+x² + 5x + 6 = 0
+Factor:
+(x + 2)(x + 3) = 0
+x = -2 or -3
+
+47. C (2880)
+25% profit
+SP = 1.25(CP)
+3600 = 1.25(CP)
+CP = 3600 ÷ 1.25
+= 2880
+
+48. C (20 m/s)
+Distance = train + bridge
+= 200 + 300
+= 500 m
+Speed = 500 ÷ 25
+= 20 m/s
+
+49. C (400)
+35% of x = 140
+0.35x = 140
+x = 140 ÷ 0.35
+= 400
+
+50. C (125)
+x + 2 = 7
+x = 5
+x³ = 5³
+= 125
