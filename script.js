@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const subCategoryList = document.getElementById('sub-category-list');
     
     const backBtn = document.getElementById('back-btn');
+    const inQuizRestartBtn = document.getElementById('in-quiz-restart-btn');
+    const customModal = document.getElementById('custom-modal');
+    const modalCancelBtn = document.getElementById('modal-cancel-btn');
+    const modalConfirmBtn = document.getElementById('modal-confirm-btn');
     const subBackBtn = document.getElementById('sub-back-btn');
     const cards = document.querySelectorAll('.category-card');
     const questionsContainer = document.getElementById('questions-container');
@@ -17,6 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let score = 0;
     let currentMainSubject = '';
+    let currentQuizId = '';
+    let userProgress = JSON.parse(localStorage.getItem('cse_reviewer_progress')) || {};
+
+    function saveProgress() {
+        if (!currentQuizId) return;
+        userProgress[currentQuizId] = {
+            currentIndex: currentIndex,
+            score: score,
+            total: currentQuestions.length
+        };
+        localStorage.setItem('cse_reviewer_progress', JSON.stringify(userProgress));
+    }
 
     const subjectMap = {
         'numerical': 'Numerical Ability',
@@ -26,22 +42,25 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const subCategoryMap = {
+        'numerical': [
+            { id: 'numerical', title: 'Numerical Ability', description: 'Mathematics, word problems, sequences, and data interpretation', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="14.01"></line><line x1="12" y1="14" x2="12" y2="14.01"></line><line x1="8" y1="14" x2="8" y2="14.01"></line><line x1="16" y1="18" x2="16" y2="18.01"></line><line x1="12" y1="18" x2="12" y2="18.01"></line><line x1="8" y1="18" x2="8" y2="18.01"></line><line x1="16" y1="10" x2="16" y2="10.01"></line><line x1="12" y1="10" x2="12" y2="10.01"></line><line x1="8" y1="10" x2="8" y2="10.01"></line></svg>' }
+        ],
         'analytical': [
-            { id: 'analytical_word', title: 'Word Association', description: 'Identifying Assumptions & Conclusions' },
-            { id: 'analytical_logical', title: 'Logical Reasoning', description: 'Logical sequences, deductions, and syllogisms' },
-            { id: 'analytical_data', title: 'Data Interpretation', description: 'Analyzing charts, graphs, and tables' }
+            { id: 'analytical_word', title: 'Word Association', description: 'Identifying Assumptions & Conclusions', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>' },
+            { id: 'analytical_logical', title: 'Logical Reasoning', description: 'Logical sequences, deductions, and syllogisms', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>' },
+            { id: 'analytical_data', title: 'Data Interpretation', description: 'Analyzing charts, graphs, and tables', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>' }
         ],
         'verbal': [
-            { id: 'verbal_grammar', title: 'Grammar and Correct Usage', description: 'Sentence structure and proper English usage' },
-            { id: 'verbal_vocab', title: 'Vocabulary', description: 'Word meanings, synonyms, and antonyms' },
-            { id: 'verbal_paragraph', title: 'Paragraph Organization', description: 'Sequencing sentences to form coherent paragraphs' },
-            { id: 'verbal_reading', title: 'Reading Comprehension', description: 'Understanding and analyzing written passages' }
+            { id: 'verbal_grammar', title: 'Grammar and Correct Usage', description: 'Sentence structure and proper English usage', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>' },
+            { id: 'verbal_vocab', title: 'Vocabulary', description: 'Word meanings, synonyms, and antonyms', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>' },
+            { id: 'verbal_paragraph', title: 'Paragraph Organization', description: 'Sequencing sentences to form coherent paragraphs', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>' },
+            { id: 'verbal_reading', title: 'Reading Comprehension', description: 'Understanding and analyzing written passages', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>' }
         ],
         'general': [
-            { id: 'geninfo_const', title: 'Philippine Constitution', description: 'Basic principles and state policies' },
-            { id: 'geninfo_conduct', title: 'Code of Conduct (R.A 6713)', description: 'Ethical standards for public officials and employees' },
-            { id: 'geninfo_peace', title: 'Peace and Human Rights', description: 'Peace issues and human rights concepts' },
-            { id: 'geninfo_environment', title: 'Environment Management', description: 'Environmental protection and management' }
+            { id: 'geninfo_const', title: 'Philippine Constitution', description: 'Basic principles and state policies', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>' },
+            { id: 'geninfo_conduct', title: 'Code of Conduct (R.A 6713)', description: 'Ethical standards for public officials and employees', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>' },
+            { id: 'geninfo_peace', title: 'Peace and Human Rights', description: 'Peace issues and human rights concepts', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>' },
+            { id: 'geninfo_environment', title: 'Environment Management', description: 'Environmental protection and management', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>' }
         ]
     };
 
@@ -90,12 +109,24 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.animationDelay = `${delay}s`;
             card.setAttribute('data-sub', sub.id);
             
+            let progressHtml = '<div class="progress-badge" style="background: rgba(255, 255, 255, 0.05); color: var(--text-muted); border: 1px solid rgba(255, 255, 255, 0.1);">0% Complete</div>';
+            if (userProgress[sub.id]) {
+                const p = userProgress[sub.id];
+                if (p.completed) {
+                    progressHtml = '<div class="progress-badge completed">✓ Completed</div>';
+                } else if (p.currentIndex > 0 && p.total) {
+                    const percent = Math.round((p.currentIndex / p.total) * 100);
+                    progressHtml = `<div class="progress-badge in-progress">${percent}% Complete</div>`;
+                }
+            }
+
             card.innerHTML = `
                 <div class="icon-wrapper">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    ${sub.icon}
                 </div>
                 <h2>${sub.title}</h2>
                 <p>${sub.description}</p>
+                ${progressHtml}
             `;
             
             card.addEventListener('click', () => {
@@ -153,6 +184,8 @@ document.addEventListener('DOMContentLoaded', () => {
             questionSection.classList.add('hidden');
             
             if (subCategoryMap[currentMainSubject]) {
+                // Re-render sub-categories to update progress badges
+                renderSubCategories(currentMainSubject);
                 // Go back to sub-categories
                 subCategoryContainer.classList.remove('hidden');
                 void subCategoryContainer.offsetWidth;
@@ -168,11 +201,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 400);
     });
 
+    // In-Quiz Restart
+    if (inQuizRestartBtn && customModal) {
+        inQuizRestartBtn.addEventListener('click', () => {
+            customModal.classList.remove('hidden');
+        });
+        
+        modalCancelBtn.addEventListener('click', () => {
+            customModal.classList.add('hidden');
+        });
+
+        modalConfirmBtn.addEventListener('click', () => {
+            customModal.classList.add('hidden');
+            currentIndex = 0;
+            score = 0;
+            userProgress[currentQuizId].completed = false;
+            saveProgress();
+            renderQuestion();
+        });
+    }
+
     function startQuiz(subject) {
         if (typeof questionsData !== 'undefined' && questionsData[subject]) {
             currentQuestions = questionsData[subject];
-            currentIndex = 0;
-            score = 0;
+            currentQuizId = subject;
+            
+            if (userProgress[subject] && !userProgress[subject].completed) {
+                currentIndex = userProgress[subject].currentIndex || 0;
+                score = userProgress[subject].score || 0;
+            } else {
+                currentIndex = 0;
+                score = 0;
+            }
             renderQuestion();
         } else {
             questionsContainer.innerHTML = `
@@ -274,6 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.getElementById('next-btn').addEventListener('click', () => {
             currentIndex++;
+            saveProgress();
             renderQuestion();
         });
     }
@@ -302,6 +363,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showResults() {
+        if (currentQuizId) {
+            userProgress[currentQuizId] = { completed: true, score: score, total: currentQuestions.length };
+            localStorage.setItem('cse_reviewer_progress', JSON.stringify(userProgress));
+        }
+
         questionCounter.textContent = 'Quiz Completed';
         questionsContainer.innerHTML = `
             <div class="quiz-content animate-fade-in result-view">
@@ -318,6 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('restart-btn').addEventListener('click', () => {
             currentIndex = 0;
             score = 0;
+            saveProgress();
             renderQuestion();
         });
     }
