@@ -343,14 +343,20 @@ header {
     color: var(--text-main);
 }
 
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
 .question-text table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.5rem 0;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
     font-size: 1.1rem;
+    white-space: nowrap;
 }
 
 .question-text th,

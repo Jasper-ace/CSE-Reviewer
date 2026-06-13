@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (line.includes('|') && !line.includes('---')) {
                     const cells = line.split('|').map(c => c.trim()).filter(c => c);
                     if (!inTable) {
-                        html += '<table>';
+                        html += '<div class="table-responsive"><table>';
                         if (i === 1 || lines[i-1].includes('**')) { // Header row
                             html += '<thead><tr>';
                             cells.forEach(c => html += `<th>${c}</th>`);
@@ -299,13 +299,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     continue; // Skip separator row
                 } else {
                     if (inTable) {
-                        html += '</tbody></table>';
+                        html += '</tbody></table></div>';
                         inTable = false;
                     }
                     html += line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') + '<br>';
                 }
             }
-            if (inTable) html += '</tbody></table>';
+            if (inTable) html += '</tbody></table></div>';
             
             return html;
         }
